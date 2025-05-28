@@ -99,6 +99,16 @@ temp_W_map.dat = stats.WTS.wmean'.*(stats.WTS.wP' < 0.005);
 %% Visualization 
 orthviews_multiple_objs({temp_SC_map temp_W_map})
 
+% IF brain voxels showed high SC and high weight, 
+% => kind of core brain
+
+% IF brain voxels showed only with high SC,
+% => It closely related to prediction, but showing high covariance with
+% other brain regions. So, it indireclty affect prediction. (which there
+% might be voxels showing overlapped signals)
+
+% IF brain voxels showed only high weight 
+% => It affect kind of partial correlation manner.   
 
 %%
 
